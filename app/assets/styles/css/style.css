@@ -1,0 +1,33 @@
+/* abstract */
+/* Colors */
+/* base */
+/* Basic Settings */
+/* Resets */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: rgba(255, 0, 0, 0.8);
+  padding: 3rem; }
+
+/* Typography Settings */
+body {
+  font-family: serif;
+  font-style: italic; }
+
+h1 {
+  font-family: sans-serif; }
+
+/* components */
+/* layout */
+/* pages */
+/* vendors */

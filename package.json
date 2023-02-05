@@ -1,0 +1,14 @@
+{
+  "name": "hauerperle",
+  "version": "1.0.0",
+  "description": "Firmenwebsite für das Heurigenrestaurant Hauerperle",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass app/assets/styles/sass/main.scss app/assets/styles/css/style.css -w"
+  },
+  "author": "Markus Tritremmel",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
