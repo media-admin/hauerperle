@@ -1,0 +1,17 @@
+/* == MIXINS == */
+
+/* -- Clearfix */
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/* -- Link Styles -- */
+@mixin style-text-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-gray;
+}

@@ -28,6 +28,7 @@ Thumbs.db
 
 # Ignore every DS_Store File on any location
 # -----------------------------
+.DS_Store
 *.DS_Store
 */*.DS_Store
 

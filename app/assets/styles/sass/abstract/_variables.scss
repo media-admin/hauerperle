@@ -1,8 +1,20 @@
-/* Colors */
-$color-primary: red;
+/* == COLORS == */
+$color-primary: #5f021f;
 $color-primary-light: rgba($color-primary, 0.3);
 $color-primary-dark: rgba($color-primary, 0.8);
 
-$color-secondary: green;
-$color-secondary: rgba($color-secondary, 0.2);
-$color-secondary-dark: rgba($color-secondary, 0.9);
+$color-secondary: #033202;
+$color-secondary-light: rgba($color-secondary, 0.2);
+$color-secondary-dark: rgba($color-secondary, 0.8);
+
+$color-tertiary: #d7d1bf;
+$color-tertiary-light: rgba($color-secondary, 0.2);
+$color-tertiary-dark: rgba($color-secondary, 0.8);
+
+$color-gray: #707070;
+$color-gray-light: rgba($color-secondary, 0.2);
+$color-gray-dark: rgba($color-secondary, 0.8);
+
+$color-yellow: #fce2b1;
+$color-yellow-light: rgba($color-secondary, 0.2);
+$color-yellow-dark: rgba($color-secondary, 0.8);

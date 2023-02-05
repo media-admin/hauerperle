@@ -1,6 +1,6 @@
-/* Basic Settings */
+/* == BASIC SETTINGS == */
 
-/* Resets */
+/* -- Resets -- */
 *,
 *::after,
 *::before {
@@ -14,8 +14,5 @@ html {
 }
 
 body {
-  font-weight: 400;
-  line-height: 1.6rem;
-  color: $color-primary-dark;
-  padding: 3rem;
+  color: $color-gray;
 }

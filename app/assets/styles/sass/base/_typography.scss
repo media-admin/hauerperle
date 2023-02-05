@@ -1,9 +1,86 @@
-/* Typography Settings */
+/* == TYPOGRAPHY SETTINGS == */
+
+/* -- Font Imports -- */
+/* sanchez-regular - latin-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Sanchez";
+  src: url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-regular.svg#Sanchez")
+      format("svg"); /* Legacy iOS */
+}
+/* sanchez-italic - latin-ext_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Sanchez";
+  src: url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-italic.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-italic.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-italic.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-italic.svg#Sanchez")
+      format("svg"); /* Legacy iOS */
+}
+
+/* leckerli-one-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Leckerli One";
+  src: url("../../fonts/leckerli-one/leckerli-one-v16-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/leckerli-one/leckerli-one-v16-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../../fonts/leckerli-one/leckerli-one-v16-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../../fonts/leckerli-one/leckerli-one-v16-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../../fonts/leckerli-one/leckerli-one-v16-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../fonts/leckerli-one/leckerli-one-v16-latin-regular.svg#LeckerliOne")
+      format("svg"); /* Legacy iOS */
+}
+
+/* -- Default Classes -- */
 body {
-  font-family: serif;
-  font-style: italic;
+  font-size: 1.5rem;
+  font-family: "Sanchez", serif;
+  line-height: 2.6rem;
 }
 
 h1 {
-  font-family: sans-serif;
+  font-size: 2.5rem;
+  font-family: "Leckerli One", sans-serif;
+  line-height: 3.4rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: "Sanchez", serif;
+  line-height: 2.6rem;
+}
+
+a {
 }

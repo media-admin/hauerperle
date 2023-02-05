@@ -1,0 +1,7 @@
+/* == HEADER TOP */
+.site-header-top {
+  & a {
+    font-color: $color-secondary;
+    @include style-text-link;
+  }
+}
