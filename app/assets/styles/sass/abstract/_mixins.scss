@@ -1,6 +1,6 @@
 /* == MIXINS == */
 
-/* -- Clearfix */
+/* -- Clearfix -- */
 @mixin clearfix {
   &::after {
     content: "";
@@ -14,4 +14,28 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $color-gray;
+}
+
+@mixin style-text-link-default {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* -- Breakpoints -- */
+@mixin atSmall {
+  @media (min-width: 530px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin atLarge {
+  @media (min-width: 1200px) {
+    @content;
+  }
 }

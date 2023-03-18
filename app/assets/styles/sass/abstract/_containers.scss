@@ -1,0 +1,68 @@
+/* == CONTAINERS == */
+
+.container-fullwidth {
+  position: relative;
+  display: block;
+  width: calc(100%+6rem);
+
+  font-size: 1.4rem;
+  font-family: "Sanchez", serif;
+  line-height: 2.4rem;
+  font-weight: 400;
+
+  margin-left: -3rem;
+  margin-right: -3rem;
+  padding: 5rem 3rem;
+  overflow: hidden;
+}
+
+.container-fullwidth--red {
+  color: white;
+  background-color: $color-primary;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.container-fullwidth--green {
+  color: white;
+  background-color: $color-secondary;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.container-fullwidth__img {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-left: -3rem;
+  margin-right: -3rem;
+}
+
+.container-fullwidth__heading {
+  font-size: 1.8rem;
+  font-family: "Sanchez", serif;
+  line-height: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.container-fullwidth__btn {
+  font-size: 1.6rem;
+  font-family: "Sanchez", serif;
+  line-height: 2.6rem;
+  font-weight: 600;
+}
+
+.intro {
+  padding: 0rem 0.5rem;
+}
+
+.img-container {
+  position: relative;
+  display: block;
+  width: 100vw;
+  min-height: 250px;
+}

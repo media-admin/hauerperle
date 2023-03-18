@@ -5,6 +5,7 @@
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Sanchez";
+  font-style: normal;
   src: url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-regular.eot"); /* IE9 Compat Modes */
   src: url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-regular.eot?#iefix")
       format("embedded-opentype"),
@@ -25,6 +26,7 @@
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Sanchez";
+  font-style: italic;
   src: url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-italic.eot"); /* IE9 Compat Modes */
   src: url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-italic.eot?#iefix")
       format("embedded-opentype"),
@@ -40,6 +42,41 @@
     /* Safari, Android, iOS */
       url("../../fonts/sanchez/sanchez-v13-latin-ext_latin-italic.svg#Sanchez")
       format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "Sanchez";
+  src: url("../../fonts/sanchez/sanchez-bold-webfont.woff2") format("woff2"),
+    url("../../fonts/sanchez/sanchez-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sanchez";
+  src: url("../../fonts/sanchez/sanchez-bolditalic-webfont.woff2")
+      format("woff2"),
+    url("../../fonts/sanchez/sanchez-bolditalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Sanchez Semibold";
+  src: url("../../fonts/sanchez/sanchez-semibold-webfont.woff2") format("woff2"),
+    url("../../fonts/sanchez/sanchez-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sanchez Semibold";
+  src: url("../../fonts/sanchez/sanchez-semibolditalic-webfont.woff2")
+      format("woff2"),
+    url("../../fonts/sanchez/sanchez-semibolditalic-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: italic;
 }
 
 /* leckerli-one-regular - latin */
@@ -68,6 +105,16 @@ body {
   font-size: 1.5rem;
   font-family: "Sanchez", serif;
   line-height: 2.6rem;
+
+  hyphens: auto;
+  hyphenate-limit-chars: auto 3;
+  hyphenate-limit-lines: 4;
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-limit-chars: auto 3;
+  -webkit-hyphenate-limit-lines: 4;
+  -ms-hyphens: auto;
+  -ms-hyphenate-limit-chars: auto 3;
+  -ms-hyphenate-limit-lines: 4;
 }
 
 h1 {
@@ -77,10 +124,17 @@ h1 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-family: "Sanchez", serif;
   line-height: 2.6rem;
 }
 
 a {
+}
+
+strong {
+  font-size: 2.5rem;
+  font-family: "Leckerli One", sans-serif;
+  line-height: 3.4rem;
+  color: $color-primary;
 }

@@ -16,3 +16,35 @@ html {
 body {
   color: $color-gray;
 }
+
+main {
+  background-image: url(../../images/bg_smartphone.png) !important;
+  margin: 0rem;
+  padding: 0rem 1rem;
+}
+
+.site-content {
+  background-color: white;
+  padding: 1rem;
+  margin: 0rem 1rem;
+}
+
+.img--fullwidth {
+  position: absolute;
+  max-width: inherit;
+  width: 100vw;
+  min-height: 200px;
+  height: fit-content;
+  left: 0%;
+  right: 50%;
+  margin: 2rem auto;
+  margin-left: -8vw;
+  margin-right: -50vw;
+  padding: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  object-position: center center;
+  overflow: hidden;
+}

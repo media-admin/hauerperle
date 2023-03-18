@@ -1,0 +1,83 @@
+/* == NAVIGATION == */
+
+/* -- Main Navigation -- */
+
+.main-navigation {
+}
+
+.site-menu {
+  position: relative;
+  min-height: 72px;
+  height: auto;
+}
+
+/* -- Burger Menu -- */
+
+.burger-menu {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  min-height: 30px;
+  height: auto;
+  top: auto;
+
+  margin-top: 15px;
+  margin-right: 1.5rem;
+
+  transition: border-radius 0.5s;
+
+  @include atMedium {
+    display: none;
+  }
+}
+
+.line {
+  position: absolute;
+  position: relative;
+  display: block;
+  height: 3px;
+  width: 38px;
+  background: $color-secondary;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.line:nth-child(1) {
+  top: 10px;
+  top: 8px;
+}
+
+.line:nth-child(2) {
+  top: 20px;
+  top: 16px;
+}
+
+.line:nth-child(3) {
+  top: 30px;
+  top: 24px;
+}
+
+/* --- Burger Menu Animation  --- */
+
+.burger-menu.checked .line:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.burger-menu.checked .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.checked .line:nth-child(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+
+.navbar {
+}
+
+.navbar__navigation-list {
+}
+
+.navbar-item {
+}
+
+/* -- Footer Navigation -- */

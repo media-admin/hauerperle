@@ -1,0 +1,70 @@
+/* == SITE FOOTER == */
+
+.site-footer {
+  background: $color-tertiary;
+  padding-top: 3.4rem;
+  padding-bottom: 5.8rem;
+
+  &__contact {
+    display: none;
+
+    @include atMedium {
+      display: initial;
+    }
+  }
+
+  &__contact-data {
+  }
+
+  &__contact-data-phone {
+  }
+
+  &__contact-data-mail {
+  }
+
+  &-navbar {
+  }
+
+  &-navbar__navigation-list {
+    text-align: center;
+  }
+
+  &-navbar__navigation-list-item {
+    line-height: 3.4rem;
+  }
+
+  &-navbar__navigation-list-item a {
+    @include style-text-link-default;
+    color: $color-secondary;
+  }
+
+  &__navigation {
+    padding-top: 4rem;
+  }
+
+  &__navigation-list {
+    text-align: center;
+  }
+
+  &__navigation-list-item {
+    line-height: 3.4rem;
+  }
+
+  &__navigation-list-item a {
+    @include style-text-link-default;
+    color: $color-secondary;
+  }
+
+  &__copyright {
+    width: 80%;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    padding-top: 4rem;
+  }
+
+  &__copyright .wordwrap::after {
+    content: "\A";
+    white-space: pre;
+  }
+}
