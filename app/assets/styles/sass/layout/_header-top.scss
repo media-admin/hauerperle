@@ -3,20 +3,23 @@
   display: none;
 
   @include atMedium {
+    position: relative;
     display: initial;
     overflow: hidden;
+    z-index: 100 !important;
   }
 
   &__contact-information {
+    position: relative;
     display: flex;
-    width: 100%;
-    height: 65px;
+    height: 60px;
     margin-right: 0;
     margin-left: auto;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     background-color: $color-tertiary;
     border-bottom: 3px solid $color-primary;
+    padding-left: 150px;
   }
 
   &__contact-information > div {

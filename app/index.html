@@ -168,7 +168,7 @@
     <link rel="stylesheet" href="./assets/styles/css/style.css" />
   </head>
 
-  <body class="site-body">
+  <body class="home site-body">
     <header class="site-header-top">
       <div class="site-header-top__contact-information">
         <div class="site-header-top__contact-information-name">
@@ -219,6 +219,11 @@
             <img
               class="site-header__logo-img"
               src="assets/images/logo_hauerperle-smartphone.svg"
+              alt="Logo Heurigenrestaurant Hauerperle"
+            />
+            <img
+              class="site-header__logo-img--desktop"
+              src="assets/images/logo_hauerperle-desktop.svg"
               alt="Logo Heurigenrestaurant Hauerperle"
             />
           </a>
@@ -292,7 +297,7 @@
       </div>
     </div>
 
-    <main class="site-main">
+    <main class="site-main clearfix">
       <div class="site-content">
         <h1 class="home">
           Heurigenrestaurant Hauerperle - Genießen beim Hauer in Neudörfl
@@ -344,35 +349,125 @@
           />
         </div>
 
-        <section class="menue container-fullwidth"></section>
+        <section class="menue">
+          <h2 class="menue_heading h2_heading">
+            Aktuelle Mittagsmenüs<small> - Preis pro Menü € 9,60.</small>
+          </h2>
+          <p class="menue_notes">HINWEIS: Sonntags gibt es kein Mittagsmenü.</p>
+          <div class="menue__container">
+            <div class="menue__dishes">
+              <div class="menue__day">
+                <div class="menue__weekday">Donnerstag</div>
+                <div class="menue__date">20.10.2022</div>
+              </div>
+              <div class="menue__soup">Grießnockerlsuppe</div>
+              <div class="menue__dish-1">
+                Champignon-Schnitzel mit Reis und Salat
+              </div>
+              <div class="menue__dish-2">
+                Zucchini Cordon-Bleu mit Petersilienkartoffeln und Sauce Tartar
+              </div>
+            </div>
 
-        <section class="container-fullwidth container-fullwidth--green">
-          <h2 class="container-fullwidth__heading">Aktuelle Schmankerl</h2>
-          <p>
-            Je nach Saison wollen wir Ihnen zusätzliche kulinarische
-            Köstlichkeiten aus der Region bieten und den Gaumen tanzen lässt. Im
-            Monatstakt versuchen wir für Abwechslung zu sorgen und konzentrieren
-            uns auf 3 bis 4 Schmankerl, die das Genuss-Herz höher schlagen
-            lassen sollen.
-          </p>
-          <a class="container-fullwidth__btn btn" href="#">Zum Jahresplan</a>
+            <div class="menue__dishes">
+              <div class="menue__day">
+                <div class="menue__weekday">Freitag</div>
+                <div class="menue__date">21.10.2022</div>
+              </div>
+              <div class="menue__soup">Kürbiscremsuppe</div>
+              <div class="menue__dish-1">
+                Faschierten Braten mit Kartoffel-Püree und Salat
+              </div>
+              <div class="menue__dish-2">Geb. Schafskäse auf buntem Salat</div>
+            </div>
+
+            <div class="menue__dishes">
+              <div class="menue__day">
+                <div class="menue__weekday">Samstag</div>
+                <div class="menue__date">22.10.2022</div>
+              </div>
+              <div class="menue__soup">Fritattensuppe</div>
+              <div class="menue__dish-1">
+                Pute natur mit Bratkartoffeln und Gemüse
+              </div>
+              <div class="menue__dish-2"></div>
+            </div>
+
+            <div class="menue__dishes">
+              <div class="menue__day">
+                <div class="menue__weekday">Donnerstag</div>
+                <div class="menue__date">27.10.2022</div>
+              </div>
+              <div class="menue__soup">Nudelsuppe</div>
+              <div class="menue__dish-1">
+                Wiener Schnitzl mit Reis und Salat
+              </div>
+              <div class="menue__dish-2">Topfenstrudel mit Vanillesauce</div>
+            </div>
+
+            <div class="menue__dishes">
+              <div class="menue__day">
+                <div class="menue__weekday">Freitag</div>
+                <div class="menue__date">28.10.2022</div>
+              </div>
+              <div class="menue__soup">Gemüsesuppe</div>
+              <div class="menue__dish-1">
+                Scholle gebacken mit Pommes und Salat
+              </div>
+              <div class="menue__dish-2">
+                Krautstrudel mit Schnittlauchsauce
+              </div>
+            </div>
+
+            <div class="menue__dishes">
+              <div class="menue__day">
+                <div class="menue__weekday">Samstag</div>
+                <div class="menue__date">29.10.2022</div>
+              </div>
+              <div class="menue__soup">Grießnockerlsuppe</div>
+              <div class="menue__dish-1">
+                Schweinsbraten mit Knödel und Salat
+              </div>
+              <div class="menue__dish-2"></div>
+            </div>
+          </div>
         </section>
 
-        <section class="container-fullwidth container-fullwidth--red">
-          <a href="/unsere-speisekarte">
-            <img
-              class="container-fullwidth__img"
-              src="assets/images/home_cover-speisekarte-hauerperle.png"
-              alt="Cover Hauerperle-Speisekarte"
-            />
-          </a>
-          <h2 class="container-fullwidth__heading">Unsere Speisekarte</h2>
-          <p>
-            Um schon vorab ein wenig auf den Geschmack zu kommen, können Sie
-            unsere Karte gerne schon vor Ihrem Besuch durch.schmökern. Viel
-            Spaß.
-          </p>
-          <a class="container-fullwidth__btn btn" href="#">Zur Karte</a>
+        <section class="container-fullwidth container-half-on-desktop">
+          <div class="highlight container-fullwidth--green">
+            <h2 class="container-fullwidth__heading">Aktuelle Schmankerl</h2>
+            <p>
+              Je nach Saison wollen wir Ihnen zusätzliche kulinarische
+              Köstlichkeiten aus der Region bieten und den Gaumen tanzen lässt.
+              Im Monatstakt versuchen wir für Abwechslung zu sorgen und
+              konzentrieren uns auf 3 bis 4 Schmankerl, die das Genuss-Herz
+              höher schlagen lassen sollen.
+            </p>
+            <a class="container-fullwidth__btn btn" href="#">Zum Jahresplan</a>
+          </div>
+        </section>
+
+        <section class="container-fullwidth container-half-on-desktop">
+          <div class="highlight container-fullwidth--red">
+            <div class="highlight__menu-wrapper">
+              <a href="/unsere-speisekarte">
+                <img
+                  class="container-fullwidth__img"
+                  src="assets/images/home_cover-speisekarte-hauerperle.png"
+                  alt="Cover Hauerperle-Speisekarte"
+                />
+              </a>
+            </div>
+            <div class="highlight__menu-description">
+              <h2 class="container-fullwidth__heading">Unsere Speisekarte</h2>
+              <p>
+                Um schon vorab ein wenig auf den Geschmack zu kommen, können Sie
+                unsere Karte gerne schon vor Ihrem Besuch durch.schmökern. Viel
+                Spaß.
+              </p>
+              <a class="container-fullwidth__btn btn" href="#">Zur Karte</a>
+            </div>
+          </div>
         </section>
 
         <div class="img-container">
@@ -382,23 +477,49 @@
             alt="Genießen beim Hauer in Neudörfl"
           />
         </div>
+        <hr class="seperator--red" />
       </div>
     </main>
 
     <footer class="site-footer">
-      <section class="site-footer__contact">
-        <p class="site-footer__contact-data">
-          Heurigenrestaurant Hauerperle<br />
-          Hauptstraße 113, 7201 Neudörfl<br />
-          <a class="site-footer__contact-data-phone" href="tel:+43262277286"
-            >02622 / 77286</a
-          ><br />
+      <section class="site-footer__contact-information">
+        <div class="site-footer__contact-information-name">
+          Heurigenrestaurant Hauerperle
+        </div>
+        <div class="site-footer__contact-information-address">
+          <img
+            class="site-footer__contact-information-address-icon"
+            src="assets/images/icon_phone_green.svg"
+            alt="Anfahrt Icon"
+          />
           <a
-            class="site-footer__contact-data-mail"
+            class="site-footer__contact-information-address-info"
+            href="tel:+43262277826"
+            >Hauptstraße 113, 7201 Neudörfl</a
+          >
+        </div>
+        <div class="site-footer__contact-information-phone">
+          <img
+            class="site-footer__contact-information-phone-icon"
+            src="assets/images/icon_direction_green.svg"
+            alt="Telefon Icon"
+          />
+          <a class="site-footer__contact-information-phone-number" href="#"
+            >02622 / 77286</a
+          >
+        </div>
+        <div class="site-footer__contact-information-mail">
+          <img
+            class="site-footer__contact-information-mail-icon"
+            src="assets/images/icon_mail_green.svg"
+            alt="E-Mail Icon"
+          />
+          <a
+            class="site-footer__contact-information-mail-address"
             href="mailto:heuriger.hauer@aon.at"
             >heuriger.hauer@aon.at</a
-          ><br />
-        </p>
+          >
+        </div>
       </section>
 
       <div class="site-footer-navbar">
@@ -427,21 +548,23 @@
         </ul>
       </div>
 
-      <nav class="site-footer__navigation">
-        <ul class="site-footer__navigation-list">
-          <li class="site-footer__navigation-list-item">
-            <a href="/impressum">Impressum</a>
-          </li>
-          <li class="site-footer__navigation-list-item">
-            <a href="/datenschutz">Datenschutz</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="site-footer__additional-data">
+        <nav class="site-footer__navigation">
+          <ul class="site-footer__navigation-list">
+            <li class="site-footer__navigation-list-item">
+              <a href="/impressum">Impressum</a>
+            </li>
+            <li class="site-footer__navigation-list-item">
+              <a href="/datenschutz">Datenschutz</a>
+            </li>
+          </ul>
+        </nav>
 
-      <p class="site-footer__copyright">
-        ©&nbsp;Copyright&nbsp;2023 -<span class="wordwrap"></span
-        >Heurigenrestaurant Hauerperle
-      </p>
+        <p class="site-footer__copyright">
+          ©&nbsp;Copyright&nbsp;2023 -<span class="wordwrap"></span
+          >Heurigenrestaurant Hauerperle
+        </p>
+      </div>
     </footer>
 
     <!-- == SCRIPTS == -->

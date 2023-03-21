@@ -9,8 +9,12 @@
   overflow: hidden;
 
   @include atMedium {
+    position: relative;
     min-height: 768px;
     max-height: 768px;
+    top: -115px;
+    z-index: 0;
+    overflow: hidden;
   }
 
   &__img {
@@ -25,12 +29,12 @@
 
   &__text {
     position: relative;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-family: "Leckerli One", sans-serif;
     line-height: 3.4rem;
     color: $color-primary;
     background-color: $color-tertiary;
-    padding: 0.5rem 2rem;
+    padding: 0.8rem 2rem;
 
     @include atMedium {
       position: absolute;
