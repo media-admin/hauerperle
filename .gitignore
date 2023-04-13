@@ -63,6 +63,8 @@ dist
 # Exclude WordPress Installation temporarily <<<<<< INCLUDE WHEN STATIC DEVELOPMENT HAS BEEN FINISHED >>>>>>>
 # -----------------------------
 index.php
+backups/*
+
 !cms
 
 cms/wp-admin
