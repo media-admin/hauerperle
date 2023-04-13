@@ -1,0 +1,25 @@
+/* == BUTTONS == */
+.btn,
+.btn:link,
+.btn:visited {
+  position: relative;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-family: "Sanchez", serif;
+  font-weight: 600;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 5px;
+  color: inherit;
+  border: 1px solid;
+  margin: 1rem 0;
+  margin-top: 3rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn--white,
+.btn--white:link,
+.btn--white:visited {
+  color: white;
+}

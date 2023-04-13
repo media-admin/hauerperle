@@ -1,0 +1,80 @@
+/* == BASIC SETTINGS == */
+
+/* -- Resets -- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // Basis = 16px --> 1.0rem = 10px
+}
+
+body {
+  color: $color-gray;
+}
+
+main {
+  background-image: url(../../images/bg_smartphone.png) !important;
+  margin: 0rem;
+  padding: 0rem 1rem;
+
+  @include atMedium {
+    position: relative;
+    top: -115px;
+  }
+}
+
+.site-content {
+  background-color: white;
+  padding: 1rem;
+  margin: 0rem 1rem;
+}
+
+.img--fullwidth {
+  position: absolute;
+  max-width: inherit;
+  width: 100vw;
+  min-height: 200px;
+  height: fit-content;
+  left: 0%;
+  right: 50%;
+  margin: 2rem auto;
+  margin-left: -8vw;
+  margin-right: -50vw;
+  padding: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  object-position: center center;
+  overflow: hidden;
+
+  @include atMedium {
+    position: relative;
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    margin-right: initial;
+  }
+}
+
+hr {
+  position: relative;
+  display: block;
+  width: 90%;
+  border-width: 1px;
+  border-style: solid;
+  margin: 10px auto;
+  top: -10px;
+
+  @include atMedium {
+    width: 95%;
+  }
+}
+
+hr.seperator--red {
+  border-color: $color-primary;
+}

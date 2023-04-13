@@ -1,0 +1,94 @@
+/* == MENUE */
+.menue {
+  position: relative;
+  width: 100%;
+
+  &_heading {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &_notes {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &__container {
+    width: calc(100% + 2rem);
+    border-bottom: 10px solid $color-yellow;
+    margin-left: -1rem;
+    padding-bottom: 2.5rem;
+  }
+
+  &__dishes {
+    background-color: $color-yellow;
+    line-height: 2.8rem;
+    padding: 1.5rem 2rem;
+    overflow-wrap: break-word;
+
+    @include atMedium {
+      display: flex;
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+  &__dishes:nth-child(odd) {
+    background-color: white;
+  }
+
+  &__day {
+    display: inline-flex;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid $color-gray;
+
+    @include atMedium {
+      width: 15%;
+      display: inline-flex;
+      border-bottom: none;
+    }
+  }
+
+  &__weekday {
+    width: fit-content;
+  }
+
+  &__date {
+    padding-left: 0.5rem;
+  }
+
+  &__date:before {
+    content: " | ";
+  }
+
+  &__soup {
+    line-height: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+
+    @include atMedium {
+      width: 20%;
+    }
+  }
+
+  &__dish-1 {
+    line-height: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+
+    @include atMedium {
+      width: 30%;
+    }
+  }
+
+  &__dish-2 {
+    line-height: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+
+    @include atMedium {
+      width: 30%;
+    }
+  }
+}

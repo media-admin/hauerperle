@@ -62,7 +62,14 @@ dist
 
 # Exclude WordPress Installation temporarily <<<<<< INCLUDE WHEN STATIC DEVELOPMENT HAS BEEN FINISHED >>>>>>>
 # -----------------------------
-cms
+index.php
+!cms
+
+cms/wp-admin
+cms/wp-includes
+cms/*.php
+cms/*.html
+cms/*.txt
 
 
 # DYNAMIC ENVIRONMENT
@@ -71,11 +78,19 @@ cms
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
 # -----------------------------
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/mu-plugins/*
-!wp-content/plugins/
-!wp-content/plugins/*
-!wp-content/themes/
+cms/wp-content/*
 
+!cms/wp-content/mu-plugins/
+!cms/wp-content/mu-plugins/*
 
+!cms/wp-content/plugins/
+!cms/wp-content/plugins/*
+
+!cms/wp-content/themes/
+!cms/wp-content/themes/*
+
+cms/wp-content/themes/index.php
+cms/wp-content/themes/twentytwenty/*
+cms/wp-content/themes/twentytwentyone/*
+cms/wp-content/themes/twentytwentytwo/*
+cms/wp-content/themes/twentytwentythree/*

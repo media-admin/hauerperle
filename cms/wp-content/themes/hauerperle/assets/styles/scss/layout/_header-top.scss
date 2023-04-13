@@ -1,0 +1,72 @@
+/* == HEADER TOP */
+.site-header-top {
+  display: none;
+
+  @include atMedium {
+    position: relative;
+    display: initial;
+    overflow: hidden;
+    z-index: 100 !important;
+  }
+
+  &__contact-information {
+    position: relative;
+    display: flex;
+    height: 60px;
+    margin-right: 0;
+    margin-left: auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-tertiary;
+    border-bottom: 3px solid $color-primary;
+    padding-left: 150px;
+  }
+
+  &__contact-information > div {
+    margin-left: 2rem;
+  }
+
+  &__contact-information-name {
+    font-weight: 700;
+    color: $color-secondary;
+  }
+
+  &__contact-information-address {
+  }
+
+  &__contact-information-address-icon {
+    margin-right: 0.5rem;
+    margin-bottom: -4px;
+  }
+
+  &__contact-information-address-info {
+  }
+
+  &__contact-information-phone {
+  }
+
+  &__contact-information-phone-icon {
+    margin-right: 0.5rem;
+    margin-bottom: -2px;
+  }
+
+  &__contact-information-phone-number {
+  }
+
+  &__contact-information-mail {
+    padding-right: 1.5rem;
+  }
+
+  &__contact-information-mail-icon {
+    margin-right: 0.5rem;
+    margin-bottom: -2px;
+  }
+
+  &__contact-information-mail-address {
+  }
+
+  & a {
+    color: $color-secondary;
+    @include style-text-link-default;
+  }
+}

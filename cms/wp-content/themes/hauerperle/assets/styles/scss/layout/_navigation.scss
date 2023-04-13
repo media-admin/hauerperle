@@ -1,0 +1,165 @@
+/* == NAVIGATION == */
+
+/* -- Main Navigation -- */
+
+.main-navigation {
+  display: inline-block;
+  width: 100%;
+
+  @include atMedium {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+}
+
+.site-menu {
+  position: relative;
+  min-height: 72px;
+  height: auto;
+  text-align: right;
+
+  @include atMedium {
+    display: none;
+  }
+}
+
+/* -- Burger Menu -- */
+
+.burger-menu {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  min-height: 30px;
+  height: auto;
+  top: auto;
+
+  margin-top: 15px;
+  margin-right: 1.5rem;
+
+  transition: border-radius 0.5s;
+
+  @include atMedium {
+    display: none;
+  }
+}
+
+.line {
+  position: absolute;
+  position: relative;
+  display: block;
+  height: 3px;
+  width: 38px;
+  background: $color-secondary;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+.line:nth-child(1) {
+  top: 10px;
+  top: 8px;
+}
+
+.line:nth-child(2) {
+  top: 20px;
+  top: 16px;
+}
+
+.line:nth-child(3) {
+  top: 30px;
+  top: 24px;
+}
+
+/* --- Burger Menu Animation  --- */
+
+.burger-menu.checked .line:nth-child(1) {
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.burger-menu.checked .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.checked .line:nth-child(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+
+.navbar {
+  display: none;
+
+  @include atMedium {
+    display: initial;
+    display: flex;
+
+    position: relative;
+    display: inline-flex;
+
+    width: 100%;
+    height: 65px;
+    margin-right: 0;
+    margin-left: auto;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    justify-content: normal;
+  }
+}
+
+.is-active .navbar {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: calc(100vh - 85px);
+  /* top: 60px; */
+  top: 85px;
+  left: 0px;
+  text-align: left;
+  background-color: rgba($color-tertiary, 0.9);
+  border-top: 3px solid $color-primary;
+  padding-top: 0px;
+  transition: 0.8s;
+  z-index: 1;
+}
+
+.navbar__navigation-list {
+  width: 100%;
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 1;
+  height: 65px;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-navigation.is-active .navbar__navigation-list {
+  position: relative;
+  display: inline-table;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.navbar-item {
+  list-style: none;
+}
+
+.main-navigation.is-active .navbar-item {
+  position: relative;
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.navbar-item a {
+  @include style-text-link-default;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: $color-primary;
+  text-decoration: uppercase;
+}
+
+/* -- Footer Navigation -- */

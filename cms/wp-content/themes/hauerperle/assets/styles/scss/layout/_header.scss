@@ -1,0 +1,63 @@
+/* == HEADER */
+.site-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $color-tertiary;
+  border-bottom: 3px solid $color-primary;
+
+  @include atMedium {
+    position: absolute;
+    height: 115px;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: 100 !important;
+  }
+
+  &__branding {
+    @include atMedium {
+    }
+  }
+
+  &__logo {
+    position: relative;
+    min-width: 260px;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 0.5rem;
+
+    @include atMedium {
+      min-width: 150px;
+      min-height: 120px;
+    }
+  }
+
+  &__logo-img {
+    width: 100%;
+    height: auto;
+
+    @include atMedium {
+      display: none;
+    }
+  }
+
+  &__logo-img--desktop {
+    display: none;
+
+    @include atMedium {
+      position: absolute;
+      display: block;
+      width: 135px;
+      height: auto;
+      top: -60px;
+      left: 2rem;
+    }
+  }
+
+  & a {
+    color: $color-secondary;
+    @include style-text-link;
+  }
+}
