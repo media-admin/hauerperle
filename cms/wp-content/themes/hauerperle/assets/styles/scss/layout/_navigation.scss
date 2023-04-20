@@ -112,9 +112,9 @@
   position: absolute;
   display: block;
   width: 100vw;
-  height: calc(100vh - 85px);
+  height: calc(100vh - 130px);
   /* top: 60px; */
-  top: 85px;
+  top: 130px;
   left: 0px;
   text-align: left;
   background-color: rgba($color-tertiary, 0.9);
@@ -122,6 +122,28 @@
   padding-top: 0px;
   transition: 0.8s;
   z-index: 1;
+
+  @include atMedium {
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    height: initial;
+    top: initial;
+    left: initial;
+    text-align: initial;
+    background-color: initial;
+    border-top: none;
+    justify-content: normal;
+    padding-top: initial;
+    transition: none;
+    z-index: initial;
+    height: 65px;
+    margin-right: 0;
+    margin-left: auto;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
 }
 
 .navbar__navigation-list {
@@ -130,7 +152,6 @@
   flex-basis: auto;
   flex-grow: 1;
   height: 65px;
-
   justify-content: space-evenly;
   align-items: center;
 }
@@ -142,6 +163,16 @@
   height: 100%;
   justify-content: center;
   padding-top: 4rem;
+
+  @include atMedium {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    height: 65px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: initial;
+  }
 }
 
 .navbar-item {
@@ -152,6 +183,10 @@
   position: relative;
   text-align: center;
   margin: 3rem auto;
+
+  @include atMedium {
+    margin: initial;
+  }
 }
 
 .navbar-item a {

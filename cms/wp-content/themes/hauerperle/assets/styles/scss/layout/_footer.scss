@@ -7,7 +7,6 @@
 
   @include atMedium {
     position: relative;
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
@@ -117,6 +116,7 @@
 
   &-navbar__navigation-list-item {
     line-height: 3.4rem;
+    width: 100%;
 
     @include atMedium {
       width: 35%;
@@ -130,6 +130,9 @@
 
   &__navigation {
     padding-top: 4rem;
+
+    @include atMedium {
+    }
   }
 
   &__navigation-list {
