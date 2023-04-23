@@ -1,0 +1,85 @@
+/* == PAGE PARTNER */
+.partners {
+  position: relative;
+  width: 100%;
+
+
+  & a {
+    text-decoration: none;
+  }
+
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+
+  &__thumbnail {
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba($color-gray,0.25);
+    margin-top: 1.0rem;
+    margin-bottom: 0.0rem;
+
+  }
+
+
+
+  &__card {
+    text-align: center;
+    border-radius: 0px;
+    background-color: transparent;
+    border: 0px;
+  }
+
+
+  &__title {
+    position: relative;
+    width: 100%;
+    color: $color-primary;
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+  }
+
+
+  &__location {
+    position: relative;
+    width: 100%;
+    color: $color-gray;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+  }
+
+
+  .partners__goods {
+    font-weight: 400 !important;
+  }
+
+
+  &__goods {
+    position: relative;
+    width: 100%;
+    color: $color-gray;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
+
+
+
+
+}

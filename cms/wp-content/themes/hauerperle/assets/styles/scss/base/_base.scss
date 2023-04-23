@@ -13,6 +13,10 @@ html {
   font-size: 62.5%; // Basis = 16px --> 1.0rem = 10px
 }
 
+
+
+/* General Settings */
+
 body {
   color: $color-gray;
 }
@@ -49,7 +53,6 @@ main {
 .site-content a {
   color: $color-gray;
   font-weight: 600;
-
 }
 
 
@@ -94,4 +97,21 @@ hr,
   @include atMedium {
     width: 100%;
   }
+}
+
+/* Accent Color */
+input[type=checkbox] {
+  accent-color: $color-primary;
+}
+
+input[type=radio] {
+  accent-color: $color-primary;
+}
+
+input[type=range] {
+  accent-color: $color-primary;
+}
+
+progress {
+  accent-color: $color-primary;
 }

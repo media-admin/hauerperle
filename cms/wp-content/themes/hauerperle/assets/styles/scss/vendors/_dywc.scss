@@ -1,13 +1,4 @@
-$color_border: #E57D07;
-$color-gray: #76777B;
-$color-gray_rejected: #FF0000;
-$color-gray_inner: #000000;
-$color_bg: #F2F2F2;
-$color_link: #E57D07;
-$color_link_inner: #000000;
-$color-yellow: #E57D07;
-$color_bg_info: #DEDEDE;
-$color-secondary: #00FF00;
+/* COOKIE BANNER */
 
 #dywc_bglayer {
   position: fixed;
@@ -27,31 +18,34 @@ $color-secondary: #00FF00;
   color: $color-gray;
   transition: all 0.25s;
   width: calc(100% - 60px);
-  border: 1px solid $color_border;
+  border: 2px solid $color-primary;
   z-index: 1000;
   opacity: 1;
   max-width: 400px;
 
   & > .content {
-    padding: 15px;
-    background-color: $color_bg;
+    padding: 1.5rem;
+    background-color: $color-tertiary;
     text-align: center;
     z-index: 1;
     position: relative;
 
     h2 {
-      font-size: 18px;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
       font-weight: bold;
+      color: $color-primary;
       margin: 0;
+      margin-top: 1.5rem;
       padding: 0;
     }
 
 
     p {
-      margin: 15px 0;
-      font-size: 14px;
-      line-height: 16px;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
       font-weight: normal;
+      margin: 1.5rem 0;
       padding: 0;
     }
 
@@ -62,34 +56,35 @@ $color-secondary: #00FF00;
 
 
     a {
-      font-size: 14px;
-      line-height: 16px;
-      color: $color_link;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      color: $color-secondary;
     }
 
 
     a.info {
       display: inline-block;
-      margin-left: 5px;
+      margin-left: .5rem;
     }
 
 
     & > div {
       background-color: $color-yellow;
-      padding: 15px;
-      color: $color-gray_inner;
-      font-size: 14px;
-      line-height: 16px;
+      padding: 1.5rem;
+      color: $color-gray;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
 
       .cookie_group_wrap {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         align-items: center;
+        margin-top: 1.5rem;
 
         & > * {
-          margin: 5px;
+          margin: .5rem;
           display: flex;
           align-items: center;
           flex-direction: row;
@@ -97,20 +92,26 @@ $color-secondary: #00FF00;
 
       }
 
+      & .cookie_group label {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        margin-left: 0.5rem;
+      }
+
 
       a {
-        color: $color_link_inner;
-        font-size: 14px;
+        color: $color-yellow;
+        font-size: 1.4rem;
       }
 
 
       a.info {
-        font-size: 12px;
+        font-size: 1.2rem;
 
         &:before {
           content: '[';
           display: inline-block;
-          margin-right: 5px;
+          margin-right: .5rem;
         }
 
         &:after {
@@ -122,47 +123,51 @@ $color-secondary: #00FF00;
       }
 
       .accept_wrap {
-        padding-top: 15px;
+        padding-top: 1.5rem;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
 
         & > a {
-          margin-top: 5px;
-          margin-bottom: 5px;
+          margin-top: .5rem;
+          margin-bottom: .5rem;
         }
 
 
         & > a.accept {
-          background-color: $color-secondary;
-          padding: 8px 18px;
+          font-weight: 700;
           text-decoration: none;
-          text-transform :uppercase;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          background-color: $color-secondary;
+          padding: .8rem 1.4rem;
+          padding-top: 1.0rem;
         }
 
 
         & > a.accept2 {
-          font-size: 0.75em;
+          font-size: 1.5rem;
+          color: $color-secondary;
           text-decoration: none;
         }
 
       }
 
       &:last-child {
-        margin-left: -15px;
-        margin-right: -15px;
-        margin-bottom: -15px;
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        margin-bottom: -1.5rem;
         width: auto;
         background-color: #DEDEDE;
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
 
         a {
-          font-size: 12px;
-          line-height: 14px;
+          font-size: 1.2rem;
+          line-height: 1.4rem;
           display: inline-block;
-          margin: 5px 0;
+          margin: .5rem 0;
         }
 
       }
@@ -181,13 +186,13 @@ $color-secondary: #00FF00;
     height: calc(100%);
     max-height: 100%;
     overflow-y: auto;
-    background-color: $color_bg;
+    background-color: $color-tertiary;
     transition: all 0.5s;
 
     p {
-      padding: 15px;
-      font-size: 14px;
-      line-height: 16px;
+      padding: 1.5rem;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
     }
 
 
@@ -195,9 +200,9 @@ $color-secondary: #00FF00;
 
       & > .cookie {
         text-align: left;
-        padding: 5px;
-        font-size: 12px;
-        margin: 0 15px 15px 15px;
+        padding: .5rem;
+        font-size: 1.2rem;
+        margin: 0 1.5rem 1.5rem 1.5rem;
 
         .row {
           width: 100%;
@@ -205,13 +210,13 @@ $color-secondary: #00FF00;
           flex-direction: row;
           justify-content: flex-start;
           align-items: flex-start;
-          background-color: $color_bg_info;
-          margin: 0 0 1px 0;
-          padding: 5px;
+          background-color: $color-tertiary-light;
+          margin: 0 0 .1rem 0;
+          padding: .5rem;
           box-sizing: border-box;
           flex-wrap: nowrap;
-          font-size: 12px;
-          line-height: 13px;
+          font-size: 1.2rem;
+          line-height: 1.3rem;
         }
 
         .row > .label {
@@ -236,62 +241,61 @@ $color-secondary: #00FF00;
 
 
   &.ft {
-    left: 30px;
-    top: 30px;
+    left: 3.0rem;
+    top: 3.0rem;
   }
 
 
   &.mt {
     left: 50%;
-    top: 30px;
+    top: 3.0rem;
     transform: translateX(-50%);
   }
 
   &.rt {
-    right: 30px;
-    top: 30px;
+    right: 3.0rem;
+    top: 3.0rem;
   }
 
 
   &.lm {
-    left: 30px;
+    left: 3.0rem;
     top: 50%;
     transform:translateY(-50%);
   }
 
 
   &.mm {
-    left:50%;
-    top:50%;
-    transform:translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
 
 
   &.rm {
-    right: 30px;
+    right: 3.0rem;
     top: 50%;
     transform: translateY(-50%);
   }
 
 
   &.lb {
-    left: 30px;
-    bottom: 30px;
+    left: 3.0rem;
+    bottom: 3.0rem;
   }
 
 
   &.mb {
     left: 50%;
-    bottom: 30px;
-    transform:translateX(-50%);
+    bottom: 3.0rem;
+    transform: translateX(-50%);
   }
 
 
   &.rb {
-    right: 30px;
-    bottom: 30px;
+    right: 3.0rem;
+    bottom: 3.0rem;
   }
-
 
 }
 
@@ -306,9 +310,9 @@ $color-secondary: #00FF00;
 
   & > .cookie {
     text-align: left;
-    font-size:12px;
-    margin:0 0 15px 0;
-    width:100%;
+    font-size: 1.2rem;
+    margin: 0 0 1.5rem 0;
+    width: 100%;
 
     .row {
       width: 100%;
@@ -316,13 +320,13 @@ $color-secondary: #00FF00;
       flex-direction: row;
       justify-content: flex-start;
       align-items: flex-start;
-      background-color: $color_bg_info;
-      margin: 0 0 1px 0;
-      padding: 2px 5px;
+      background-color: $color-tertiary-light;
+      margin: 0 0 .1rem 0;
+      padding: .2rem .5rem;
       box-sizing: border-box;
 
       & .label {
-        width: 100px;
+        width: 10.0rem;
         flex-grow: 0;
         flex-shrink: 0;
       }
@@ -339,7 +343,12 @@ $color-secondary: #00FF00;
   }
 
   .reject {
-    color:$color-gray_rejected;
+    color: $color-primary;
   }
 
+}
+
+input[checkbox] {
+  height: 1.4rem;
+  width: 1.4rem;
 }

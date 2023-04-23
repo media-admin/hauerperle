@@ -9,6 +9,15 @@ function shortcode_actual_dishes() {
 add_shortcode( 'shortcode_actual_dishes', 'shortcode_actual_dishes' );
 
 
+function shortcode_history() {
+	ob_start();
+	get_template_part( 'shortcodes/shortcode_history');
+	return ob_get_clean();
+}
+
+add_shortcode( 'shortcode_history', 'shortcode_history' );
+
+
 function shortcode_partners_suppliers() {
 	ob_start();
 	get_template_part( 'shortcodes/shortcode_partners_suppliers');

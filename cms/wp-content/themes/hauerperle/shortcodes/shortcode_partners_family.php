@@ -16,11 +16,9 @@
 					<a class="section-partner__link" href="<?php the_field( 'partner_url' );?>" target="_blank">
 					<?php the_post_thumbnail('full', ['class' => 'partners__thumbnail card__thumbnail']); ?>
 						<div class="partners__content card__content">
-							<h3 class="partners__title card__title"><?php the_title();?></h3>
-							<div class="partners__subtitle card__subtitle">
-								<?php the_excerpt() ?>
-							</div>
-							<a class="partners__url" href="<?php echo the_field('partner_url');?>" target="_blank"><?php the_field('partner_website');?></a>
+							<h3 class="partners__title"><?php the_title();?></h3>
+							<div class="partners__location"><?php the_field( 'partner_location' );?></div>
+							<div class="partners__goods"><?php the_field( 'partner_goods' );?></div>
 						</div>
 					</a>
 				</div>

@@ -13,6 +13,11 @@
 /* components */
 @import "components/button";
 @import "components/tables";
+@import "components/cards";
+@import "components/google-map";
+@import "components/contact-forms";
+@import "components/history";
+@import "components/timeline";
 
 /* layout */
 @import "layout/header-top";
@@ -25,6 +30,7 @@
 
 /* pages */
 @import "pages/home";
+@import "pages/partner";
 
 /* vendors */
 @import "vendors/dywc";
